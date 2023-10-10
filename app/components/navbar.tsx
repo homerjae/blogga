@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaGithub, FaLinkedin, FaLaptop} from "react-icons/fa"
+import { FaHandHoldingHeart, FaInfoCircle, FaFistRaised} from "react-icons/fa"
 
 
 export default function Navbar() {
@@ -10,15 +10,15 @@ export default function Navbar() {
                     <Link href="/" className="text-white/90 no-underline hover:text-white">Adrian Hughes
                     </Link>
                 </h1>
-                <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-5xl">
-                    <Link className="text-white/90 hover:text-white" href="https://linkedin.com/in/adrian-hughes-26a271196">
-                        <FaLinkedin />
+                    <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-5xl">
+                            <Link className="text-white/90 hover:text-white" href="https://linkedin.com/in/adrian-hughes-26a271196" title="Info on my creator">
+                                <FaInfoCircle />
+                            </Link>
+                    <Link className="text-white/90 hover:text-white" href="https://courses.davegray.codes/" title="Personal Journal">
+                        <FaHandHoldingHeart />
                     </Link>
-                    <Link className="text-white/90 hover:text-white" href="https://courses.davegray.codes/">
-                        <FaLaptop />
-                    </Link>
-                    <Link className="text-white/90 hover:text-white" href="https://github.com/homerjae">
-                        <FaGithub />
+                    <Link className="text-white/90 hover:text-white" href="https://github.com/homerjae" title="World Views">
+                        <FaFistRaised />
                     </Link>
                 </div>
             </div>
