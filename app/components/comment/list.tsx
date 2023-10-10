@@ -35,7 +35,6 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
                   <div className="flex space-x-2">
                     <b>{comment.user.name}</b>
                     <time className="text-gray-400">
-                      {distanceToNow(comment.created_at)}
                     </time>
                     {(isAdmin || isAuthor) && (
                       <button
@@ -56,3 +55,5 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
       </div>
     )
   }
+//                       {distanceToNow(comment.created_at)} at line 38
+

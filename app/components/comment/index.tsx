@@ -7,7 +7,7 @@ export default function Comment() {
 
     return (
         <div className="mt-20">
-            <CommentForm onSubmit={onSubmit} text={text} settext={setText} />
+            <CommentForm onSubmit={onSubmit} text={text} setText={setText} />
             <CommentList comments={comments} onDelete={onDelete} />
         </div>
     )

@@ -1,4 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react'
+import Link from 'next/link'
 
 type CommentFormProps = {
     text: string
@@ -37,7 +38,7 @@ return (
                     </button>
                     <button 
                         className="text-gray-500"
-                        onClick={() => logout({ returnTo: window.location.origin })}
+                        onClick={() => logout()}
                     >
                         Log Out
                     </button>
